@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+html {
+  scroll-behavior: smooth;
+}
+
 /*Navbar*/
 ul {
     font-size: 18px;
@@ -43,12 +47,16 @@ ul {
 div.navtext {
   margin-top: 100px;
   text-align: center;
+  font-weight: bold;
+
 }
 
 p.navtext {
   margin: 25px;
   cursor: pointer;
   user-select: none;
+  color: #111;
+  text-decoration: none;
 }
 /* burger menu */
   .burger {
@@ -166,10 +174,9 @@ body {
   
   div.text {
     margin-top: 75px;
-    width: 50%;
+    width: 60%;
     margin-left: auto;
     margin-right: auto;
-    text-align: center;
     font-family: 'Quicksand', sans-serif;
   }
   
@@ -181,4 +188,8 @@ body {
   h1.text {
     font-weight: 100;
     font-size: 36px;
+  }
+
+  h2 {
+    text-align: center;
   }
