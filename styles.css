@@ -131,7 +131,7 @@ body {
   .fixed {
     /* The image used */
     background-image: url("images/image.jpg");
-    min-height: 1000px;
+    min-height: 100vh;
   
     /* parallax effect */
     background-attachment: fixed;
@@ -142,12 +142,14 @@ body {
   
   div.hero {
     background-color: rgba(17, 17, 17, 0.726);
-  top: 45%;
+  top: -52vh;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 500px;
-    position: absolute;
+    position: relative;
     height: 180px;
+    padding-top: 1px;
+    padding-bottom: 1px;
   }
   
   @media only screen and (max-width: 700px) {
@@ -165,11 +167,14 @@ body {
     margin-top: 12.5%;
   }
 
+  .hero.hidden {
+    display: none;
+  }
   
 /* Text Section */
 .section {
     padding-top: 25px;
-    height: 1500px;
+    height: 1000px;
   }
   
   div.text {
@@ -178,6 +183,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     font-family: 'Quicksand', sans-serif;
+    height: 100vh;
   }
   
   p.text {
@@ -192,4 +198,21 @@ body {
 
   h2 {
     text-align: center;
+  }
+
+  /* wrapper */
+  .wrapper {
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    height: 100vh;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+  }
+
+  .wrapper::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+  }
+
+  section {
+    scroll-snap-align: start;
   }
