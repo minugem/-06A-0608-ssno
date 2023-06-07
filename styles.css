@@ -190,7 +190,14 @@ body {
     margin-top: 50px;
     font-size: 22px;
   }
-  
+
+  @media only screen and (max-width: 700px) {
+  p.text {
+    margin-top: 50px;
+    font-size: 16px;
+  }
+  }
+
   h1.text {
     font-weight: 100;
     font-size: 36px;
@@ -199,6 +206,20 @@ body {
   h2 {
     text-align: center;
   }
+
+  .image {
+    text-align: center;
+  }
+
+  img.image {
+    width: 500px;
+  }
+
+  @media only screen and (max-width: 700px) {
+    img.image {
+      width: 80%;
+    }
+    }
 
   /* wrapper */
   .wrapper {
